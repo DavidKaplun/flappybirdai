@@ -28,7 +28,7 @@ class Bird:
         self.vel=0
         self.height = self.y
         self.img_count = 0#which image currently showing
-        self.imag = self.IMGS[0]
+        self.img = self.IMGS[0]
 
     def jump(self):
         self.vel = - 10.5 #to go up in the screen the velocity has to be negative
@@ -89,7 +89,7 @@ class Pipe:
     GAP = 200
     VEL = 5
 
-    def __init(self, x):
+    def __init__(self, x):
         self.x=x
         self.height=0
 
@@ -154,13 +154,22 @@ class Base:
         win.blit(self.IMG, (self.x1,self.y))
         win.blit(self.IMG, (self.x2, self.y))
 
-def draw_window(win, bird):
+def draw_window(win, bird, pipes, base):
     win.blit(BG_IMG, (0,0))#the '(0,0)' is the top left position of the image we are drawing
+
+    for pipe in pipes:
+        pipe.draw(win)
+
+    base.draw(win)
+
     bird.draw(win)
     pygame.display.update()
 
 def main():
+    score=0
     bird = Bird(200,200)
+    base = Base(530)
+    pipes = [Pipe(650)]
     win = pygame.display.set_mode((WIN_WIDTH,WIN_HEIGHT))
     clock = pygame.time.Clock()
     run = True
@@ -170,8 +179,30 @@ def main():
             if event.type == pygame.QUIT:
                 run=False
 
-        bird.move()
-        draw_window(win,bird)
+        #bird.move()
+        add_pipe = False
+        rem = []
+        for pipe in pipes:
+            if pipe.collide(bird):
+                pass
+
+            if pipe.x + pipe.PIPE_TOP.get_width() < 0:
+                rem.append(pipe)
+
+            if not pipe.passed and pipe.x < bird.x:
+                pipe.passed = True
+                add_pipe = True
+
+            pipe.move()
+
+        if add_pipe:
+            score+=1
+            pipes.append(Pipe(650))
+
+        for r in rem:
+            pipes.remove(r)
+        base.move()
+        draw_window(win,bird, pipes, base)
 
     pygame.quit()
     quit()
