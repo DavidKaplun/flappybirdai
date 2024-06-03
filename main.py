@@ -109,6 +109,25 @@ class Pipe:
 
     def move(self):
         self.x-=self.VEL
+
+    def draw(self, win):
+        win.blit(self.PIPE_TOP, (self.x, self.top))
+        win.blit(self.PIPE_BOTTOM, (self.x, self.bottom))
+
+    def collide(self, bird):
+        bird_mask = bird.get_mask()
+        top_mask = pygame.mask.from_surface(self.PIPE_TOP)
+        bottom_mask = pygame.mask.from_surface(self.PIPE_BOTTOM)
+
+        top_offset = (self.x - bird.x, self.top -round(bird.y))
+        bottom_offset = (self.x - bird.x, self.bottom - round(bird.y))
+
+        b_point = bird_mask.overlap(bottom_mask, bottom_offset)#checks if bird touches bottom pipe
+        t_point = bird_mask.overlap(top_mask, top_offset)  # checks if bird touches top pipe
+
+        if t_point or b_point:
+            return True#means we are colliding with an object
+        return False
 def draw_window(win, bird):
     win.blit(BG_IMG, (0,0))#the '(0,0)' is the top left position of the image we are drawing
     bird.draw(win)

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="added bird.move to main and fixed a couple of typos in the code">
+    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="created the pipe class and added move and set_height functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -122,7 +122,23 @@
       <option name="project" value="LOCAL‎" />
       <updated>1717389221949</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎-00006" summary="created the pipe class">
+      <option name="closed" value="true" />
+      <created>1717393834540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1717393834540</updated>
+    </task>
+    <task id="LOCAL‎-00007" summary="created the pipe class and added move and set_height functions">
+      <option name="closed" value="true" />
+      <created>1717393865132</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL‎-00007" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1717393865132</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,6 +147,8 @@
     <MESSAGE value="just finished the draw funciton and added get mask function as well" />
     <MESSAGE value="wrote draw_window and main" />
     <MESSAGE value="added bird.move to main and fixed a couple of typos in the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bird.move to main and fixed a couple of typos in the code" />
+    <MESSAGE value="created the pipe class" />
+    <MESSAGE value="created the pipe class and added move and set_height functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="created the pipe class and added move and set_height functions" />
   </component>
 </project>
