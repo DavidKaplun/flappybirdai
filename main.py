@@ -17,7 +17,7 @@ BG_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs", "bg.png
 class Bird:
     IMGS = BIRDS_IMGS
     MAX_ROTATION = 25 #how much the bird is gonna rotate when it goes up/down
-    ROL_VEL = 20 #how much we gonna rotate each frame when we move the bird
+    ROT_VEL = 20 #how much we gonna rotate each frame when we move the bird
     ANIMATION_TIME = 5 #how fast the bird is gonna flap its wings
 
     def __init__(self, x, y):
@@ -39,15 +39,15 @@ class Bird:
         self.tick_count+=1#keeps tracks of how many moves we had since the last jump
         displacement = self.vel*self.tick_count+1.5*self.tick_count**2#from the physics equation: dx = x0 + v0t + (a*t^2)/2
 
-        if d>=16:#if we move faster than 16 pixels, set the speed to 16 pixels
-            d =16
+        if displacement>=16:#if we move faster than 16 pixels, set the speed to 16 pixels
+            displacement =16
 
-        if d<0:#fine-tunes the movement
-            d -=2
+        if displacement<0:#fine-tunes the movement
+            displacement -=2
 
-        self.y +=d#apply the changes to the position of the bird
+        self.y +=displacement#apply the changes to the position of the bird
 
-        if d<0 or self.y<self.height+50:#if the bird is moving up then tilt it upwards
+        if displacement<0 or self.y<self.height+50:#if the bird is moving up then tilt it upwards
             if self.tilt < self.MAX_ROTATION:
                 self.tilt = self.MAX_ROTATION
         else:
@@ -73,7 +73,7 @@ class Bird:
             self.img_count = 0
 
         if self.tilt <= -80:
-            self.img = self.IMG[1]
+            self.img = self.IMGS[1]
             self.img_count = self.ANIMATION_TIME*2
 
         #this rotates the image around the center of the bird
@@ -98,6 +98,7 @@ def main():
             if event.type == pygame.QUIT:
                 run=False
 
+        bird.move()
         draw_window(win,bird)
 
     pygame.quit()
