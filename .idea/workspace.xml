@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="wrote draw_window and main">
+    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="added bird.move to main and fixed a couple of typos in the code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +114,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1717389048196</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary="added bird.move to main and fixed a couple of typos in the code">
+      <option name="closed" value="true" />
+      <created>1717389221949</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1717389221949</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -121,6 +130,7 @@
     <MESSAGE value="added images and created jump and move functions in bird class" />
     <MESSAGE value="just finished the draw funciton and added get mask function as well" />
     <MESSAGE value="wrote draw_window and main" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrote draw_window and main" />
+    <MESSAGE value="added bird.move to main and fixed a couple of typos in the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bird.move to main and fixed a couple of typos in the code" />
   </component>
 </project>
