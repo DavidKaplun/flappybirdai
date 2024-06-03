@@ -76,6 +76,10 @@ class Bird:
             self.img = self.IMG[1]
             self.img_count = self.ANIMATION_TIME*2
 
+        #this rotates the image around the center of the bird
         rotated_image = pygame.transform.rotate(self.img, self.tilt)
         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x,self.y)).center)
-        win.blit()
+        win.blit(rotated_image, new_rect.topleft)
+
+    def get_mask(self):
+        return pygame.mask.from_surface(self.img)
