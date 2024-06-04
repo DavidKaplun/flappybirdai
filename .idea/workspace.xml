@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="create the Base class and the functions&#10;&quot;move&quot; and &quot;draw&quot; in it">
+    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="implemented drawing of the pipes and the base in main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -154,7 +154,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1717401382888</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL‎-00010" summary="implemented drawing of the pipes and the base in main">
+      <option name="closed" value="true" />
+      <created>1717403403842</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL‎-00010" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1717403403842</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,6 +175,7 @@
     <MESSAGE value="created the pipe class and added move and set_height functions" />
     <MESSAGE value="added draw and collide functions to the pipe class" />
     <MESSAGE value="create the Base class and the functions&#10;&quot;move&quot; and &quot;draw&quot; in it" />
-    <option name="LAST_COMMIT_MESSAGE" value="create the Base class and the functions&#10;&quot;move&quot; and &quot;draw&quot; in it" />
+    <MESSAGE value="implemented drawing of the pipes and the base in main" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented drawing of the pipes and the base in main" />
   </component>
 </project>
