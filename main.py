@@ -161,7 +161,7 @@ def draw_window(win, birds, pipes, base, score):
     win.blit(BG_IMG, (0,0))
 
     text = STAT_FONT.render("Score: "+ str(score),1,(255,255,255))
-
+    gen_txt= STAT_FONT.render("Gen: " + str(gen), 1, (255, 255, 255))
 
     for pipe in pipes:
         pipe.draw(win)
@@ -171,10 +171,15 @@ def draw_window(win, birds, pipes, base, score):
     for bird in birds:
         bird.draw(win)
     win.blit(text, (WIN_WIDTH - 10 - text.get_width(), 10))
+    win.blit(gen_txt, (10 , 10))
     pygame.display.update()
+
+gen=0
 
 def main(genomes, config):
     score=0
+    global gen
+    gen+=1
 
     birds = []
     nets=[]
@@ -251,6 +256,9 @@ def main(genomes, config):
         base.move()
         draw_window(win,birds, pipes, base, score)
 
+        if score>20:
+            run=False
+
 
 
 
@@ -264,7 +272,7 @@ def run(config_path):
 
     population.add_reporter(stats)
 
-    winner = population.run(main,50)#50 is the amount of the generations we are going to run
+    winner = population.run(main,10)#10 is the amount of the generations we are going to run
 
 
 
