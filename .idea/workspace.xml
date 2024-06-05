@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="added neat config file and connected it to run function">
+    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="changed the main and the draw screen functions so they can work with multiple birds at the same time and let the birds learn on their own">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -178,7 +178,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1717479360562</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL‎-00013" summary="changed the main and the draw screen functions so they can work with multiple birds at the same time and let the birds learn on their own">
+      <option name="closed" value="true" />
+      <created>1717563042757</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL‎-00013" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1717563042757</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,6 +202,7 @@
     <MESSAGE value="implemented drawing of the pipes and the base in main" />
     <MESSAGE value="added score to the screen while playing" />
     <MESSAGE value="added neat config file and connected it to run function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added neat config file and connected it to run function" />
+    <MESSAGE value="changed the main and the draw screen functions so they can work with multiple birds at the same time and let the birds learn on their own" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the main and the draw screen functions so they can work with multiple birds at the same time and let the birds learn on their own" />
   </component>
 </project>

@@ -106,7 +106,7 @@ class Pipe:
 
     def set_height(self):
         # define where the top and the bottom of the pipe and how tall they are
-        self.height = random.randrange(50, 450)
+        self.height = random.randrange(50, 350)
         self.top = self.height - self.PIPE_TOP.get_height()#this is the point above which there is the upper pipe
         self.bottom =self.height+self.GAP
 
