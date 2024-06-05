@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="added score to the screen while playing">
+    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="added neat config file and connected it to run function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -170,7 +170,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1717476461050</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL‎-00012" summary="added neat config file and connected it to run function">
+      <option name="closed" value="true" />
+      <created>1717479360562</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL‎-00012" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1717479360562</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +193,7 @@
     <MESSAGE value="create the Base class and the functions&#10;&quot;move&quot; and &quot;draw&quot; in it" />
     <MESSAGE value="implemented drawing of the pipes and the base in main" />
     <MESSAGE value="added score to the screen while playing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added score to the screen while playing" />
+    <MESSAGE value="added neat config file and connected it to run function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added neat config file and connected it to run function" />
   </component>
 </project>
