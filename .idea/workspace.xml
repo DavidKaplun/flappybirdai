@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="fixed all the typos and made changes to set_height function to make sure it doesnt generate pipes that are impossible to pass">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="d8b94726-623e-4ca3-8ce9-7bcd2eff7b80" name="Changes" comment="added display of the generation number to the screen&#10;added max score threshhold&#10;changed the max number of generations&#10;&#10;in the future i will clean the code and make sure to add a script to save the best bird and then use it later" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +191,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1717564177022</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL‎-00015" summary="added display of the generation number to the screen&#10;added max score threshhold&#10;changed the max number of generations&#10;&#10;in the future i will clean the code and make sure to add a script to save the best bird and then use it later">
+      <option name="closed" value="true" />
+      <created>1717565495425</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL‎-00015" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1717565495425</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -212,6 +217,7 @@
     <MESSAGE value="added neat config file and connected it to run function" />
     <MESSAGE value="changed the main and the draw screen functions so they can work with multiple birds at the same time and let the birds learn on their own" />
     <MESSAGE value="fixed all the typos and made changes to set_height function to make sure it doesnt generate pipes that are impossible to pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed all the typos and made changes to set_height function to make sure it doesnt generate pipes that are impossible to pass" />
+    <MESSAGE value="added display of the generation number to the screen&#10;added max score threshhold&#10;changed the max number of generations&#10;&#10;in the future i will clean the code and make sure to add a script to save the best bird and then use it later" />
+    <option name="LAST_COMMIT_MESSAGE" value="added display of the generation number to the screen&#10;added max score threshhold&#10;changed the max number of generations&#10;&#10;in the future i will clean the code and make sure to add a script to save the best bird and then use it later" />
   </component>
 </project>
